@@ -3,9 +3,25 @@
   padding: 0;
 }
 
-body img.pag1 {
+body h1 {
+  text-align: center;
+}
+body div.form {
+  display: flex;
+  justify-content: space-around;
+}
+body div.form button {
+  width: 100px;
+  margin-top: 30px;
+}
+body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+body div img.pag1 {
   display: flex;
   width: 300px;
   cursor: pointer;
-  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
