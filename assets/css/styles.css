@@ -3,25 +3,86 @@
   padding: 0;
 }
 
-body h1 {
+body {
+  background-color: aqua;
+}
+body.pagina1 h1 {
   text-align: center;
 }
-body div.form {
+body.pagina1 div.form {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-body div.form button {
+body.pagina1 div.form button {
   width: 100px;
   margin-top: 30px;
 }
-body div {
+body.pagina1 div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
 }
-body div img.pag1 {
+body.pagina1 div img.pag1 {
   display: flex;
   width: 300px;
   cursor: pointer;
+}
+
+.pagina2 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+.pagina2 div .sticker-container {
+  height: 190px;
+}
+.pagina2 div .sticker-container .sticker {
+  height: 180px;
 }/*# sourceMappingURL=styles.css.map */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+.sticker-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+.sticker {
+  margin: 0 20px;
+}
+img {
+  width: 100px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 10px;
+}
+input[type="number"] {
+  width: 50px;
+  text-align: center;
+  align-items: center;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}

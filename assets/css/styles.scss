@@ -6,6 +6,12 @@
 
 body {
 
+    background-color: aqua;
+
+    &.pagina1 {
+
+       
+
     h1 {
         text-align: center;
     }
@@ -52,3 +58,31 @@ body {
 
     }}
 }
+}
+
+    .pagina2 {
+
+        font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+
+        div {
+            &.sticker-container {    
+                
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+                width: 100px;
+                 img {
+                        width:100px;
+                        height:auto;
+                    }
+                }
+            }}
+            
+
+
+
+
+    }
