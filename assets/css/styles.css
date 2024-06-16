@@ -5,6 +5,8 @@
 
 body {
   background-color: aqua;
+  color: #04172ba4;
+ 
 }
 body.pagina1 h1 {
   text-align: center;
@@ -26,7 +28,8 @@ body.pagina1 div {
 }
 body.pagina1 div img.pag1 {
   display: flex;
-  width: 300px;
+  width: 200px;
+  height: auto;
   cursor: pointer;
 }
 

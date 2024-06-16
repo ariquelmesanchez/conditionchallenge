@@ -1,35 +1,25 @@
-const imagenOne = document.getElementById("img1")
+// Fx para verificar el password
+document.getElementById('ingresar').addEventListener('click', function() {
+    // Obtener los valores de los select
+    const digit1 = document.getElementById('digit1').value;
+    const digit2 = document.getElementById('digit2').value;
+    const digit3 = document.getElementById('digit3').value;
 
-        imagenOne.addEventListener("click", function()
-    {
-        if (img1.style.border === "2px solid red")
-        {
-            img1.style.border = "";
+    // Construir el password
+    const password = digit1 + digit2 + digit3;
 
-        }
-        else {
-            img1.style.border = "2px solid red";
-        }
-    });
+    
+    const resultado3 = document.getElementById('resultado3');
 
-    // document.getElementById('calcular').addEventListener('click', function() {
-        
-    //     const sticker1 = parseInt(document.getElementById('sticker1').value) || 0;
-    //     const sticker2 = parseInt(document.getElementById('sticker2').value) || 0;
-    //     const sticker3 = parseInt(document.getElementById('sticker3').value) || 0;
-
-    //     // Calcular suma de los stickers
-    //     const total = sticker1 + sticker2 + sticker3;
-
-    //     // Referencia párrafo de resultado
-    //     const resultado = document.getElementById('resultado');
-
-    //     // Verificar si el total es menor o igual a 10
-    //     if (total <= 10) {
-    //         resultado.textContent = `Has seleccionado ${total} stickers.`;
-    //         resultado.style.color = 'green';
-    //     } else {
-    //         resultado.textContent = `Has seleccionado demasiados stickers. Máximo permitido es 10.`;
-    //         resultado.style.color = 'red';
-    //     }
-    // });
+    // Verificar el password
+    if (password === '911') {
+        resultado3.textContent = 'password 1 correcto';
+        resultado3.style.color = 'green';
+    } else if (password === '714') {
+        resultado3.textContent = 'password 2 es correcto';
+        resultado3.style.color = 'green';
+    } else {
+        resultado3.textContent = 'password incorrecto';
+        resultado3.style.color = 'red';
+    }
+});
