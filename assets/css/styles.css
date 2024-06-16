@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body img.pag1 {
+  display: flex;
+  width: 300px;
+  cursor: pointer;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
